@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "MyAdminPage";
+}
+
+<h1>MyAdminPage</h1>
+
+
+    <p style="font-size:200px;color:red">@User.Identity.Name</p>
+
+    <form method="post" asp-controller="Admin" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>
+
